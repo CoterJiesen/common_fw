@@ -1,0 +1,16 @@
+syntax = "proto2";                                                               
+package auth; 
+
+message RawInfo{
+	optional uint64 uid = 1; //用户id
+	optional string deviceid = 2; //用户设备标示	
+	optional int64 expired_time = 3; //过期时间
+	optional bytes option = 4; //预留buff
+}
+
+
+message Token{
+	optional RawInfo raw = 1; //明文部分
+	optional bytes cipher= 2; //密文部分
+}
+
