@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统维护中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 32px;
+            user-select: none;
+            margin-top: -20%;
+            background-image: -webkit-linear-gradient(right,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* transition: all 0.3s; */
+            animation: slidetounlock 4s ease infinite;
+        }
+
+        @keyframes slidetounlock {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: 320px 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>系统升级维护中。。。</p>
+</body>
+
+</html>
